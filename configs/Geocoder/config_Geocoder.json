@@ -1,0 +1,21 @@
+{
+  "geocoder": {
+    "autoComplete": true,
+    "minCharacters": 3,
+    "arcgisGeocoder": false,
+    "geocoders": [
+      {
+        "url": "http://gis.nola.gov:6080/arcgis/rest/services/CompositePIN2/GeocodeServer",
+        "name": "Nola Composite",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Zoom to Address"
+      },
+      {
+        "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "name": "Esri World Geocoder",
+        "singleLineFieldName": "SingleLine",
+        "placeholder": "Esri World Geocoder"
+      }
+    ]
+  }
+}
