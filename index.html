@@ -108,6 +108,12 @@
 				height: 100%;
 				position: absolute;
 			}
+
+      /*DJA Custom*/
+      tr[layertrnodeid='Construction_Quick_View_475'], tr[layertrnodeid='Construction_Quick_View_9692']{
+        display:none !important;
+      }
+
 		</style>
 		<script>
 			/*******************************
@@ -170,11 +176,12 @@
     //Hacky way to open 'About' tab by default. 
     var clickInterval = setInterval(function() {
       if($("[title='About RoadWork']").length > 0) {
-        console.log('Click attempt succeeded.')
         $("[title='About RoadWork']").click()
+        console.log('Click attempt succeeded!')
         clearInterval(clickInterval);
       }
     }, 1000);
+
     </script>
 	</body>
 </html>
